@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador De Senha Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!--Tag article,cujo id e container, a qual agrupa todas as tags;-->
+ <article id="container">
+
+    <!--Titulo do article cujo id e sectionTitle;-->
+    <section id="sectionTitle">
+            <h1 id="titleH1">Password Generater</h1>
+    </section>
+
+    <!--Campo responsavel por receber o resultado da senha aleatoria cujo id e sectionRes;-->
+    <section id="sectionRes">
+          <div id="campoRes"></div>
+    </section>
+
+    <!--Campo de preenchimento dos inputs contidos pela tag section cuja id e sectionBody;-->
+    <section id="sectionBody">
+          <!--Campo do Input do tamanho da senha;-->
+          <div id="campoInputs">
+            <label>password length</label>
+            <input type="number" name="number" min="2" max="30" id="inputNumber">
+          </div>
+
+          <!--Campo do Input das letras maiusculas;-->
+          <div id="campoInputs">
+            <label>include uppercase letters</label>
+            <input type="checkbox" name="ckeck" id="inputCheckBox">
+          </div>
+
+          <!--Campo do Input das letras minusculas;-->
+          <div id="campoInputs">
+            <label>include lowercase letters</label>
+            <input type="checkbox" name="ckeck" id="inputCheckBox">
+          </div>
+
+          <!--Campo do Input dos numeros;-->
+          <div id="campoInputs">
+            <label>include numbers</label>
+            <input type="checkbox" name="ckeck" id="inputCheckBox">
+          </div>
+
+          <!--Campo do Input dos simbolos;-->
+          <div id="campoInputs">
+            <label>include symbols</label>
+            <input type="checkbox" name="ckeck" id="inputCheckBox">
+          </div>
+
+          <!--Section responsavel pelo botao de gerar a senha;-->
+          <section id="sectionBtn">
+            <button id="btnGenerate">generate password</button>
+          </section>
+    </section> 
+</article>  
+<footer>Desenvolvido por Jefferson!</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
